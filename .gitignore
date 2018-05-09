@@ -89,3 +89,8 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
+leetcode.iml
