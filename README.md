@@ -1,0 +1,2 @@
+# leetcode
+leetCode learn plan
