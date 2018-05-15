@@ -5,9 +5,11 @@ package algorithm.simple.string;
  */
 public class CountAndSay {
 
+    public static void main(String[] args) {
+        CountAndSay.solution(4);
+    }
 
-
-    public String solution(int n) {
+    public static String solution(int n) {
         String result = "1";
         int min = 1;
         if (n < 0) {
@@ -18,7 +20,7 @@ public class CountAndSay {
         int start = 2;
         while (start <= n) {
             char[] chars = result.toCharArray();
-            int count = 1;
+            int count = 0;
             char ch = chars[0];
             StringBuilder sb = new StringBuilder();
             for (char c : chars) {
@@ -32,6 +34,7 @@ public class CountAndSay {
             }
             sb.append(count).append(ch);
             result = sb.toString();
+            System.out.println("index = " + start + ", and string = " + result );
             start++;
         }
         return result;
